@@ -28,6 +28,6 @@ mongoose
 
   
 server.listen(app.get("port") , () => {
-    console.log("server is runuuing on 8080")
+    console.log("server is runuuing on 8000")
 
 })
