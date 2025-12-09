@@ -62,7 +62,7 @@ export default function VideoMeetComponent() {
         console.log("HELLO")
         getPermissions();
 
-    })
+    } , [])
 
     let getDislayMedia = () => {
         if (screen) {
@@ -517,7 +517,9 @@ export default function VideoMeetComponent() {
                     </div>
 
 
-                    <video className={styles.meetUserVideo} ref={localVideoref} autoPlay muted></video>
+                    {/* <video className={styles.meetUserVideo} ref={localVideoref} autoPlay muted></video> */}
+                    <video className={styles.meetUserVideo} ref={localVideoref} autoPlay muted playsInline></video>
+
 
                     <div className={styles.conferenceView}>
                         {videos.map((video) => (
